@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O'ZBEGIM — Milliy ta'm va mehmondo'stlik maskani</title>
+<meta name="description" content="O'ZBEGIM — haqiqiy o'zbek milliy taomlari restorani.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hdr" id="hdr">
+  <a href="#bosh" class="logo"><span class="ornament" aria-hidden="true">✦</span>O'ZBEGIM</a>
+  <nav id="nav" aria-label="Asosiy menyu">
+    <a href="#bosh">Bosh sahifa</a><a href="#menyu">Menyu</a><a href="#taomlar">Taomlar</a>
+    <a href="#haqimizda">Biz haqimizda</a><a href="#galereya">Galereya</a><a href="#fikrlar">Fikrlar</a><a href="#aloqa">Aloqa</a>
+  </nav>
+  <div class="hdr-r">
+    <button class="cart-btn" id="cartOpen" aria-label="Savatchani ochish">🛒<span id="cartCount">0</span></button>
+    <button class="btn" data-order>Buyurtma berish</button>
+    <button class="burger" id="burger" aria-label="Menyuni ochish"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="bosh">
+  <img data-k="plov" data-w="1600" data-h="900" alt="An'anaviy o'zbek palovi qozonda" class="hero-img">
+  <div class="hero-in">
+    <p class="label">AN'ANAVIY O'ZBEK MILLIY TAOMLARI</p>
+    <h1>Haqiqiy o'zbekona ta'm — O'ZBEGIMda!</h1>
+    <p>Milliy qadriyatlar, mehr bilan tayyorlangan taomlar va unutilmas lazzat. Sizni haqiqiy o'zbek dasturxoniga taklif qilamiz.</p>
+    <div class="btns"><a href="#taomlar" class="btn">Menyuni ko'rish</a><button class="btn ghost" data-order>Buyurtma berish</button></div>
+  </div>
+  <a href="#taomlar" class="scroll" aria-label="Pastga"><span></span></a>
+</section>
+
+<section class="sec dark" id="taomlar">
+  <h2 class="rv">Bizning eng mazali taomlarimiz</h2>
+  <div class="slider" id="foodSlider">
+    <button class="arr prev" aria-label="Oldingi">‹</button>
+    <div class="vp"><div class="track" id="foodTrack"></div></div>
+    <button class="arr next" aria-label="Keyingi">›</button>
+    <div class="dots"></div>
+  </div>
+</section>
+
+<section class="sec" id="kategoriya">
+  <h2 class="rv">Taomlarimizni tanlang</h2>
+  <div class="cats" id="cats"></div>
+</section>
+
+<section class="sec dark" id="menyu">
+  <h2 class="rv">Bizning menyu</h2>
+  <p class="sub" id="filterInfo">Barcha taomlar</p>
+  <div class="grid" id="menuGrid"></div>
+</section>
+
+<section class="sec" id="haqimizda">
+  <div class="about">
+    <div class="rv">
+      <h2>O'ZBEGIM — milliy ta'm va mehmondo'stlik maskani</h2>
+      <p>Biz o'zbek milliy taomlarining betakror ta'mini, qadimiy an'analarimiz va samimiy mehmondo'stligimiz bilan birlashtiramiz.</p>
+      <ul class="feat">
+        <li><b>Tarix.</b> Oilaviy oshxonamiz bir necha avlod an'anasidan boshlangan.</li>
+        <li><b>Qadimiy usullar.</b> Palov qozonda, somsa tandirda pishiriladi.</li>
+        <li><b>Tajribali oshpazlar.</b> Har bir taom ustalar qo'lida tayyorlanadi.</li>
+        <li><b>Yangi masalliqlar.</b> Mahsulotlar har kuni yangi keltiriladi.</li>
+        <li><b>Sifatli xizmat.</b> Mehmon biz uchun avvalo aziz inson.</li>
+        <li><b>Mehmondo'stlik.</b> Dasturxonimiz doim keng va ochiq.</li>
+      </ul>
+    </div>
+    <div class="about-img rv">
+      <img data-k="interior" data-w="700" data-h="500" alt="O'ZBEGIM restoranining ichki ko'rinishi">
+      <img data-k="chef" data-w="500" data-h="400" alt="Oshpaz qozonda taom tayyorlamoqda">
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="takliflar">
+  <h2 class="rv">Maxsus takliflar</h2>
+  <div class="grid offers" id="offers"></div>
+</section>
+
+<section class="sec" id="galereya">
+  <h2 class="rv">O'ZBEGIM muhitidan lavhalar</h2>
+  <div class="gal" id="gal"></div>
+</section>
+
+<section class="sec dark" id="fikrlar">
+  <h2 class="rv">Mijozlarimiz fikrlari</h2>
+  <div class="slider" id="revSlider">
+    <button class="arr prev" aria-label="Oldingi">‹</button>
+    <div class="vp"><div class="track" id="revTrack"></div></div>
+    <button class="arr next" aria-label="Keyingi">›</button>
+    <div class="dots"></div>
+  </div>
+</section>
+
+<section class="sec" id="aloqa">
+  <h2 class="rv">Biz bilan bog'laning</h2>
+  <div class="contact">
+    <div>
+      <ul class="info" id="info"></ul>
+      <iframe title="Xarita" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=69.20%2C41.28%2C69.34%2C41.34&amp;layer=mapnik"></iframe>
+    </div>
+    <form id="contactForm" novalidate>
+      <label>Ismingiz<input name="n" required autocomplete="name"></label>
+      <label>Telefon raqamingiz<input name="p" type="tel" required placeholder="+998 90 123 45 67" autocomplete="tel"></label>
+      <label>Xabaringiz<textarea name="m" rows="4" required></textarea></label>
+      <p class="err" id="cErr" role="alert"></p>
+      <button class="btn">Xabar yuborish</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div>
+    <a href="#bosh" class="logo"><span class="ornament">✦</span>O'ZBEGIM</a>
+    <p>Haqiqiy o'zbek milliy taomlari va samimiy mehmondo'stlik.</p>
+    <div class="soc"><a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram">✈</a><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">◎</a></div>
+  </div>
+  <div><h4>Sahifalar</h4><a href="#menyu">Menyu</a><a href="#haqimizda">Biz haqimizda</a><a href="#galereya">Galereya</a><a href="#aloqa">Aloqa</a></div>
+  <div><h4>Aloqa</h4><p data-c="phone"></p><p data-c="addr"></p><h4>Ish vaqti</h4><p data-c="hours"></p></div>
+  <p class="copy">© 2026 O'ZBEGIM. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<div class="ov" id="ov"></div>
+<aside class="cart" id="cart" aria-label="Savatcha">
+  <div class="cart-h"><h3>Savatcha</h3><button class="x" data-close aria-label="Yopish">×</button></div>
+  <div class="cart-b" id="cartBody"></div>
+  <div class="cart-f"><div class="row"><span>Jami:</span><b id="cartTotal">0 so'm</b></div><button class="btn full" data-order>Buyurtma berish</button></div>
+</aside>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Buyurtma">
+  <button class="x" data-close aria-label="Yopish">×</button>
+  <form id="orderForm" novalidate>
+    <h3>Buyurtmani rasmiylashtirish</h3>
+    <label>Ism va familiya<input name="n" required autocomplete="name"></label>
+    <label>Telefon raqami<input name="p" type="tel" required placeholder="+998 90 123 45 67" autocomplete="tel"></label>
+    <label>Yetkazib berish manzili<input name="a" required autocomplete="street-address"></label>
+    <div class="sum"><p><b>Buyurtma qilingan taomlar:</b></p><ul id="sumList"></ul>
+      <p>Taomlar soni: <b id="sumQty">0</b></p><p>Umumiy narx: <b class="pr" id="sumTotal">0 so'm</b></p></div>
+    <label>Qo'shimcha izoh<textarea name="c" rows="2"></textarea></label>
+    <p class="err" id="oErr" role="alert"></p>
+    <button class="btn full">Buyurtmani tasdiqlash</button>
+  </form>
+  <div class="done" id="done" hidden><div class="ok">✓</div><p>Buyurtmangiz muvaffaqiyatli qabul qilindi! Tez orada siz bilan bog'lanamiz.</p><button class="btn" data-close>Yopish</button></div>
+</div>
+
+<div class="modal wide" id="detail"><button class="x" data-close aria-label="Yopish">×</button><div id="detailBody"></div></div>
+
+<div class="lb" id="lb"><button class="x" aria-label="Yopish">×</button><button class="arr prev" aria-label="Oldingi">‹</button><img alt=""><button class="arr next" aria-label="Keyingi">›</button></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
